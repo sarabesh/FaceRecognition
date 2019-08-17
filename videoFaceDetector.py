@@ -18,7 +18,7 @@ while(result!=1):
         
         result = md.classify(detected_face)
         print(result)
-        result = md.verifyFace('sarabesh.jpeg',detected_face)
+        result = md.verifyFace('target.jpeg',detected_face)
         cv2.imshow('img',img)
     if cv2.waitKey(1) & 0xFF == ord('q'): #press q to quit
         break   
